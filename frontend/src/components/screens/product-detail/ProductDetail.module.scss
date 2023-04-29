@@ -1,0 +1,36 @@
+.product__detail {
+  @apply container mx-auto h-screen;
+  .contain {
+    height: 730px;
+    @apply bg-white rounded-3xl w-full relative mt-16 container mx-auto px-24;
+    .content {
+      @apply flex justify-between items-center h-4/6 mt-6;
+      .image {
+        width: 450px;
+        height: 450px;
+        @apply flex items-center justify-center bg-dark-green rounded-full;
+      }
+      .info {
+        @apply flex flex-col justify-between h-5/6;
+        .text {
+          width: 700px;
+          .title {
+            @apply text-4xl text-green;
+          }
+          .description {
+            @apply text-lg mt-6;
+          }
+        }
+      }
+    }
+    .gallery {
+      @apply flex;
+      img {
+        @apply mr-9 border-2 border-green rounded-3xl;
+      }
+    }
+  }
+  .title__page {
+    @apply text-6xl  py-14 text-end;
+  }
+}

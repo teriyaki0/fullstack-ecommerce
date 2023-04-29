@@ -1,0 +1,14 @@
+.actions {
+  div {
+    @apply flex gap-5 my-1;
+    .action {
+      @apply my-2  rounded-lg flex items-center justify-center;
+    }
+    .input {
+      @apply w-2 focus:border-none;
+    }
+  }
+  .remove {
+    @apply my-2 text-red underline text-base;
+  }
+}

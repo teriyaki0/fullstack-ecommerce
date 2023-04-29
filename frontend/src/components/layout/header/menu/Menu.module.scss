@@ -1,0 +1,17 @@
+.root{
+    @apply flex items-center gap-16 z-10;
+
+    > nav{
+       > ul{
+        @apply flex items-center gap-16;
+         > li{
+            > a{
+                @apply uppercase tracking-wider;
+                &:hover{
+                    @apply text-green font-semibold;
+                }
+            }
+         }   
+        }
+    }
+}

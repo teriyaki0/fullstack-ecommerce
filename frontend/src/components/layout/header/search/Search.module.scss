@@ -1,0 +1,22 @@
+.root {
+  @apply flex items-center flex-col relative;
+  > div {
+    @apply relative flex w-96 max-w-full;
+    > input[type="text"] {
+      @apply border-b relative bg-transparent border-brown uppercase tracking-wider p-1 w-full;
+      &:focus {
+        @apply outline-none;
+      }
+    }
+    .icon {
+      @apply rotate-90 fill-brown p-3 -ml-9;
+    }
+  }
+  &::before {
+    content: "";
+    @apply absolute rounded-full bg-light-green -top-[325%] left-[3%] pt-[195%] w-[195%] z-0;
+  }
+  .result {
+    @apply absolute top-16 bg-white flex flex-col p-5 rounded-lg z-10;
+  }
+}

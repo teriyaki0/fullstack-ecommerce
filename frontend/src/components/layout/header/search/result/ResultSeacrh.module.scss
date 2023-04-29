@@ -1,0 +1,8 @@
+.result {
+  font-size: 18px;
+
+  @apply flex items-center mt-4 pb-1 border-b border-gray px-2;
+  &:hover {
+    @apply bg-stone-100;
+  }
+}

@@ -1,0 +1,41 @@
+.root {
+  @apply tracking-widest flex items-center gap-4 z-10 relative;
+  .item {
+    @apply cursor-pointer bg-red rounded-full text-xs w-5 h-5 flex items-center justify-center text-white;
+  }
+  span {
+    @apply uppercase;
+  }
+  svg {
+    @apply fill-brown flex-none cursor-pointer;
+  }
+  .window {
+    width: 495px;
+    @apply absolute top-20 right-3 rounded-md  p-5 bg-white;
+  }
+  .cart__footer {
+    @apply flex mt-7;
+    .cart__content {
+      @apply flex items-center justify-between w-full;
+      .payment__button {
+        @apply flex h-4;
+      }
+    }
+  }
+}
+
+.cart__item {
+  @apply border-b border-gray mb-12;
+  .item__flex {
+    @apply flex;
+  }
+  .content {
+    @apply ml-4;
+  }
+  .name {
+    @apply text-xl;
+  }
+  .price {
+    @apply text-sm opacity-60 mt-2;
+  }
+}
